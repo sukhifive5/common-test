@@ -2,6 +2,12 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
+mvn:
+  url: https://maven.pkg.github.com/sukhifive5/*
+  credentials:
+    username: sukhifive5
+    password: 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
+
 jobs:
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   build-and-test:  
