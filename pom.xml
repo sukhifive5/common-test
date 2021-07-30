@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>common-test</artifactId>
-    <version>1.0.0-5</version>
+    <version>1.0.0-6</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -22,24 +22,26 @@
         </repository>
     </distributionManagement>
 
-    <plugins>
-        <plugin>
-            <groupId>net.nicoulaj.maven.plugins</groupId>
-            <artifactId>checksum-maven-plugin</artifactId>
-            <version>1.9</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>artifacts</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <algorithms>
-                    <algorithm>SHA-256</algorithm>
-                </algorithms>
-            </configuration>
-        </plugin>
-    </plugins>
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>net.nicoulaj.maven.plugins</groupId>
+              <artifactId>checksum-maven-plugin</artifactId>
+              <version>1.9</version>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>artifacts</goal>
+                      </goals>
+                  </execution>
+              </executions>
+              <configuration>
+                  <algorithms>
+                      <algorithm>SHA-256</algorithm>
+                  </algorithms>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
 
 </project>
